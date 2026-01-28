@@ -1,0 +1,8 @@
+[project]
+name = "data-check-tool"
+version = "0.1.0"
+description = "Lead data validation tool based on dynamic business rules"
+requires-python = ">=3.8"
+
+[project.scripts]
+data-check = "data_check_tool.cli:main"
