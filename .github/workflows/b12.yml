@@ -1,0 +1,24 @@
+name: B12 Submission
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: pip install requests
+
+      - name: Run submission script
+        run: python data_check_tool/utils/b12_submit.py
