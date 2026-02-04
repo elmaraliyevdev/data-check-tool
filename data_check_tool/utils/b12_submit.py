@@ -7,7 +7,7 @@ from datetime import datetime, timezone
 SIGNING_SECRET = b"hello-there-from-b12"
 
 payload = {
-    "action_run_link": "TEMP_LINK_WILL_BE_REPLACED",
+    "action_run_link": "https://github.com/elmaraliyevdev/data-check-tool/actions/runs/21673613871",
     "email": "elmaraliyevdev@gmail.com",
     "name": "Elmar Aliyev",
     "repository_link": "https://github.com/elmaraliyevdev/data-check-tool",
